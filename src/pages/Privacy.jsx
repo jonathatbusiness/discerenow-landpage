@@ -71,7 +71,11 @@ export default function Privacy() {
           <p>
             For privacy questions, support requests, or product inquiries,
             contact us at:
-            <a href="mailto:your@email.com"> your@email.com</a>.
+            <a href="mailto:jonaha.teixeira.business@gmail.com">
+              {" "}
+              jonaha.teixeira.business@gmail.com
+            </a>
+            .
           </p>
         </section>
       </main>
