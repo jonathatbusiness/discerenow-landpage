@@ -1,10 +1,10 @@
 import Header from "../components/Header";
 import Hero from "../components/Hero";
 import Footer from "../components/Footer";
-import AboutSection from "../sections/AboutSection";
-import AddinSection from "../sections/AddinSection";
-import StudioSection from "../sections/StudioSection";
-import DownloadSection from "../sections/DownloadSection";
+import AboutSection from "../sections/AboutSection.jsx";
+import AddinSection from "../sections/AddinSection.jsx";
+import StudioSection from "../sections/StudioSection.jsx";
+import DownloadSection from "../sections/DownloadSection.jsx";
 import "./Home.css";
 
 export default function Home() {
