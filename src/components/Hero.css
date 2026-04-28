@@ -1,0 +1,127 @@
+.dn-hero {
+  min-height: calc(100vh - 76px);
+  padding: 7rem 7vw;
+  display: grid;
+  grid-template-columns: 1.1fr 0.9fr;
+  gap: 4rem;
+  align-items: center;
+  background:
+    radial-gradient(
+      circle at 80% 10%,
+      rgba(236, 72, 153, 0.2),
+      transparent 34%
+    ),
+    radial-gradient(
+      circle at 10% 20%,
+      rgba(14, 165, 233, 0.18),
+      transparent 30%
+    ),
+    #ffffff;
+}
+
+.dn-hero-content {
+  max-width: 760px;
+}
+
+.dn-eyebrow {
+  display: inline-flex;
+  margin-bottom: 1.5rem;
+  padding: 0.5rem 0.85rem;
+  border: 1px solid rgba(14, 165, 233, 0.28);
+  border-radius: 999px;
+  color: #0369a1;
+  background: rgba(14, 165, 233, 0.08);
+  font-weight: 700;
+  font-size: 0.85rem;
+}
+
+.dn-hero h1 {
+  margin: 0;
+  font-size: clamp(2.7rem, 6vw, 5.6rem);
+  line-height: 0.96;
+  letter-spacing: -0.07em;
+  color: var(--dn-bg);
+}
+
+.dn-hero p {
+  max-width: 680px;
+  margin: 1.8rem 0 0;
+  font-size: 1.12rem;
+  line-height: 1.8;
+  color: var(--dn-muted);
+}
+
+.dn-hero-actions {
+  margin-top: 2.4rem;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+
+.dn-primary-button,
+.dn-secondary-button {
+  min-height: 52px;
+  padding: 0 1.3rem;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.6rem;
+  border-radius: 999px;
+  font-weight: 800;
+}
+
+.dn-primary-button {
+  color: white;
+  background: var(--dn-gradient);
+  box-shadow: 0 18px 36px rgba(139, 92, 246, 0.22);
+}
+
+.dn-secondary-button {
+  color: var(--dn-bg);
+  background: white;
+  border: 1px solid var(--dn-border);
+}
+
+.dn-hero-card {
+  padding: 2rem;
+  border-radius: 32px;
+  background: rgba(15, 23, 42, 0.96);
+  color: white;
+  box-shadow: var(--dn-shadow);
+}
+
+.dn-flow-item {
+  padding: 1.25rem;
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  border-radius: 20px;
+  background: rgba(255, 255, 255, 0.08);
+  font-weight: 800;
+}
+
+.dn-flow-item svg,
+.dn-flow-logo {
+  width: 42px;
+  height: 42px;
+  display: grid;
+  place-items: center;
+  border-radius: 14px;
+  background: var(--dn-gradient);
+  color: white;
+  font-size: 1.25rem;
+}
+
+.dn-flow-line {
+  width: 2px;
+  height: 44px;
+  margin: 0.45rem 0 0.45rem 2.55rem;
+  background: linear-gradient(var(--dn-cyan), var(--dn-pink));
+}
+
+@media (max-width: 960px) {
+  .dn-hero {
+    grid-template-columns: 1fr;
+    padding-top: 5rem;
+  }
+}
