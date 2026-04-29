@@ -11,7 +11,11 @@ export default function Header() {
   return (
     <header className="dn-header">
       <Link to="/" className="dn-logo" onClick={closeMenu}>
-        <span className="dn-logo-mark">D</span>
+        <img
+          className="dn-logo-image"
+          src="/logo-discere-now.png"
+          alt="DiscereNow logo"
+        />
         <span>DiscereNow</span>
       </Link>
 

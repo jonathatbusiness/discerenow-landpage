@@ -20,14 +20,11 @@
   font-weight: 800;
 }
 
-.dn-logo-mark {
-  width: 34px;
-  height: 34px;
-  display: grid;
-  place-items: center;
-  border-radius: 10px;
-  background: var(--dn-gradient);
-  font-weight: 900;
+.dn-logo-image {
+  width: 36px;
+  height: 36px;
+  object-fit: contain;
+  display: block;
 }
 
 .dn-nav {

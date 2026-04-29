@@ -10,15 +10,7 @@ import "./Home.css";
 export default function Home() {
   return (
     <>
-      <title>DiscereNow | Word-to-SCORM Learning Content Pipeline</title>
-      <meta
-        name="description"
-        content="DiscereNow helps instructional designers structure learning content in Microsoft Word and transform it into SCORM-ready web courses through DiscereNow Studio."
-      />
-      <meta
-        name="keywords"
-        content="DiscereNow, SCORM, e-learning authoring tool, instructional design, Microsoft Word add-in, learning design, course creation, LXD"
-      />
+      <title>DiscereNow | Turn Word Documents into E-learning Courses</title>
 
       <Header />
       <main>
