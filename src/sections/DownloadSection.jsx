@@ -1,6 +1,15 @@
-import { FiDownload, FiExternalLink } from "react-icons/fi";
+import { FiDownload, FiExternalLink, FiFileText } from "react-icons/fi";
 import "./Sections.css";
 import "./DownloadSection.css";
+
+const STUDIO_DOWNLOAD_URL =
+  "https://github.com/jonathatbusiness/discerenow-addin/releases/download/v0.1.0/DiscereNow.Studio.v0.1.0.zip";
+
+const ADDIN_MANIFEST_URL =
+  "https://github.com/jonathatbusiness/discerenow-addin/releases/download/v1.0.0/manifest.xml";
+
+const RELEASES_URL =
+  "https://github.com/jonathatbusiness/discerenow-addin/releases";
 
 export default function DownloadSection() {
   return (
@@ -8,45 +17,62 @@ export default function DownloadSection() {
       <div className="dn-section-header">
         <span className="dn-section-kicker">Beta access</span>
         <h2 className="dn-section-title">
-          Start testing the DiscereNow workflow.
+          Start building courses with DiscereNow
         </h2>
         <p className="dn-section-text">
-          Download links will be added soon. The Word add-in is intended to be
-          available through Microsoft AppSource, while DiscereNow Studio beta
-          will be available for testing as a separate app.
+          Install the Word add-in to structure your learning content, then use
+          DiscereNow Studio Beta to generate and export your course as SCORM or
+          web.
         </p>
       </div>
 
       <div className="dn-download-grid">
         <article className="dn-download-card">
-          <h3>DiscereNow Template Builder</h3>
+          <h3>DiscereNow Template Builder (Word Add-in)</h3>
           <p>
-            Install the Microsoft Word add-in and start preparing structured
-            learning documents.
+            Download the manifest XML and install the add-in in Microsoft Word
+            to start structuring your learning content.
           </p>
           <a
-            className="dn-primary-button disabled-link"
-            href="#"
-            aria-disabled="true"
+            className="dn-primary-button"
+            href={ADDIN_MANIFEST_URL}
+            target="_blank"
+            rel="noopener noreferrer"
           >
-            Add-in link coming soon <FiExternalLink />
+            Download Add-in XML <FiFileText />
           </a>
         </article>
 
         <article className="dn-download-card featured">
-          <h3>DiscereNow Studio Beta</h3>
+          <h3>DiscereNow Studio (Beta)</h3>
           <p>
-            Test the course generation workflow and export structured content to
-            web or SCORM packages.
+            Import structured Word documents, apply themes and export your
+            course as SCORM or web.
           </p>
           <a
-            className="dn-primary-button disabled-link"
-            href="#"
-            aria-disabled="true"
+            className="dn-primary-button"
+            href={STUDIO_DOWNLOAD_URL}
+            target="_blank"
+            rel="noopener noreferrer"
           >
-            Studio beta coming soon <FiDownload />
+            Download Studio Beta <FiDownload />
           </a>
         </article>
+      </div>
+
+      <div className="dn-download-footer">
+        <p>
+          Need setup instructions or want to see all versions? Check the
+          releases page.
+        </p>
+        <a
+          className="dn-secondary-link"
+          href={RELEASES_URL}
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          View releases and instructions <FiExternalLink />
+        </a>
       </div>
     </section>
   );

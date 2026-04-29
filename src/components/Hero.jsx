@@ -12,19 +12,15 @@ export default function Hero() {
         transition={{ duration: 0.7 }}
       >
         <span className="dn-eyebrow">
-          Word-to-SCORM learning content pipeline
+          E-learning authoring for Microsoft Word
         </span>
 
-        <h1>
-          Build structured learning content in Word. Turn it into SCORM-ready
-          courses.
-        </h1>
+        <h1>Turn Word documents into interactive e-learning courses.</h1>
 
         <p>
-          DiscereNow connects document-based course writing with automated
-          e-learning production. Create clean instructional content in Microsoft
-          Word, process it in DiscereNow Studio, and export web or SCORM
-          packages faster.
+          DiscereNow helps instructional designers structure learning content in
+          Microsoft Word, review it in DiscereNow Studio, and export it as SCORM
+          or web-ready courses.
         </p>
 
         <div className="dn-hero-actions">
@@ -45,17 +41,17 @@ export default function Hero() {
       >
         <div className="dn-flow-item">
           <FiFileText />
-          <span>Microsoft Word</span>
+          <span>Write in Microsoft Word</span>
         </div>
         <div className="dn-flow-line" />
         <div className="dn-flow-item">
           <span className="dn-flow-logo">D</span>
-          <span>DiscereNow Studio</span>
+          <span>Review in DiscereNow Studio</span>
         </div>
         <div className="dn-flow-line" />
         <div className="dn-flow-item">
           <FiPackage />
-          <span>SCORM / Web Export</span>
+          <span>Export as SCORM or Web</span>
         </div>
       </motion.div>
     </section>
