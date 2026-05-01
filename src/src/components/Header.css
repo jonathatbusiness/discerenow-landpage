@@ -1,0 +1,71 @@
+.dn-header {
+  position: sticky;
+  top: 0;
+  z-index: 50;
+  height: 76px;
+  padding: 0 7vw;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background: rgba(15, 23, 42, 0.92);
+  backdrop-filter: blur(16px);
+  color: white;
+}
+
+.dn-logo {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.7rem;
+  font-size: 1.25rem;
+  font-weight: 800;
+}
+
+.dn-logo-image {
+  width: 36px;
+  height: 36px;
+  object-fit: contain;
+  display: block;
+}
+
+.dn-nav {
+  display: flex;
+  align-items: center;
+  gap: 1.8rem;
+  font-size: 0.95rem;
+  color: rgba(255, 255, 255, 0.82);
+}
+
+.dn-nav a:hover {
+  color: white;
+}
+
+.dn-menu-button {
+  display: none;
+  border: 0;
+  background: transparent;
+  color: white;
+  font-size: 1.8rem;
+  cursor: pointer;
+}
+
+@media (max-width: 820px) {
+  .dn-menu-button {
+    display: block;
+  }
+
+  .dn-nav {
+    position: absolute;
+    top: 76px;
+    left: 0;
+    right: 0;
+    display: none;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 1.5rem 7vw 2rem;
+    background: #0f172a;
+  }
+
+  .dn-nav.is-open {
+    display: flex;
+  }
+}

@@ -1,0 +1,35 @@
+.dn-footer {
+  padding: 2.2rem 7vw;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 2rem;
+  background: #0f172a;
+  color: white;
+}
+
+.dn-footer p {
+  margin: 0.35rem 0 0;
+  color: rgba(255, 255, 255, 0.6);
+}
+
+.dn-footer nav {
+  display: flex;
+  gap: 1.2rem;
+  color: rgba(255, 255, 255, 0.72);
+}
+
+.dn-footer a:hover {
+  color: white;
+}
+
+@media (max-width: 720px) {
+  .dn-footer {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .dn-footer nav {
+    flex-direction: column;
+  }
+}
