@@ -1,8 +1,7 @@
 import type { Metadata } from "next";
 import { Geist, Geist_Mono } from "next/font/google";
-
+import Script from "next/script";
 import { Providers } from "./providers";
-
 import "./globals.css";
 
 const geistSans = Geist({
@@ -16,9 +15,75 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "DiscereNow | Word-to-SCORM Learning Content Pipeline",
+  metadataBase: new URL("https://discerenow-landpage-mu8r.vercel.app"),
+
+  title:
+    "DiscereNow | Transform Word Documents into Dynamic E-learning Courses",
+
   description:
-    "DiscereNow helps instructional designers structure learning content in Microsoft Word and transform it into SCORM-ready digital learning experiences.",
+    "Empower your knowledge. DiscereNow simplifies e-learning creation, turning structured Microsoft Word documents into interactive, SCORM-ready digital courses with ease and efficiency.",
+
+  keywords: [
+    "DiscereNow",
+    "e-learning authoring platform",
+    "instructional design",
+    "Microsoft Word add-in",
+    "learning experience design",
+    "course creation",
+    "LXD",
+    "SCORM",
+    "Word to e-learning",
+    "Word to SCORM",
+    "digital learning",
+    "content creation",
+    "training solutions",
+    "educational technology",
+  ],
+
+  authors: [{ name: "DiscereNow" }],
+
+  robots: {
+    index: true,
+    follow: true,
+  },
+
+  openGraph: {
+    type: "website",
+    title:
+      "DiscereNow | Transform Word Documents into Dynamic E-learning Courses",
+    description:
+      "DiscereNow empowers experts and educators to transform structured Microsoft Word content into engaging, SCORM-ready e-learning courses.",
+    url: "https://discerenow-landpage-mu8r.vercel.app/",
+    siteName: "DiscereNow",
+    images: [
+      {
+        url: "/og-discere-now.png",
+        width: 1200,
+        height: 630,
+        alt: "DiscereNow preview image",
+      },
+    ],
+  },
+
+  twitter: {
+    card: "summary_large_image",
+    title:
+      "DiscereNow | Transform Word Documents into Dynamic E-learning Courses",
+    description:
+      "Simplify e-learning. DiscereNow converts structured Word documents into interactive, SCORM-ready digital courses.",
+    images: ["/og-discere-now.png"],
+  },
+
+  icons: {
+    icon: [
+      { url: "/favicon.svg", type: "image/svg+xml" },
+      { url: "/favicon-32x32.png", sizes: "32x32", type: "image/png" },
+      { url: "/favicon-16x16.png", sizes: "16x16", type: "image/png" },
+    ],
+    apple: [{ url: "/apple-touch-icon.png", sizes: "180x180" }],
+  },
+
+  manifest: "/site.webmanifest",
 };
 
 export default function RootLayout({
@@ -32,7 +97,23 @@ export default function RootLayout({
       className={`${geistSans.variable} ${geistMono.variable} h-full antialiased`}
     >
       <body className="min-h-full flex flex-col">
-        <Providers>{children}</Providers>
+        <Providers>
+          {children}
+
+          <Script
+            src="https://www.googletagmanager.com/gtag/js?id=G-5Z038RHQMV"
+            strategy="afterInteractive"
+          />
+
+          <Script id="google-analytics" strategy="afterInteractive">
+            {`
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', 'G-5Z038RHQMV');
+    `}
+          </Script>
+        </Providers>
       </body>
     </html>
   );
