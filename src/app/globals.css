@@ -1,0 +1,72 @@
+@import "tailwindcss";
+
+@theme {
+  --color-dn-bg: #0f172a;
+  --color-dn-bg-soft: #1e293b;
+
+  --color-dn-surface: #ffffff;
+  --color-dn-surface-soft: #f8fafc;
+
+  --color-dn-text: #0f172a;
+  --color-dn-muted: #64748b;
+  --color-dn-border: #e2e8f0;
+
+  --color-dn-blue: #0ea5e9;
+  --color-dn-cyan: #22d3ee;
+  --color-dn-purple: #8b5cf6;
+  --color-dn-pink: #ec4899;
+  --color-dn-orange: #f97316;
+
+  --shadow-dn: 0 28px 80px rgba(15, 23, 42, 0.18);
+  --shadow-dn-soft: 0 18px 50px rgba(15, 23, 42, 0.08);
+
+  --radius-dn-card: 28px;
+  --radius-dn-panel: 32px;
+}
+
+:root {
+  --dn-gradient: linear-gradient(
+    135deg,
+    #0ea5e9 0%,
+    #8b5cf6 42%,
+    #ec4899 72%,
+    #f97316 100%
+  );
+
+  --dn-soft-hero:
+    radial-gradient(circle at 0% 0%, rgba(14, 165, 233, 0.24), transparent 34%),
+    radial-gradient(
+      circle at 100% 0%,
+      rgba(236, 72, 153, 0.22),
+      transparent 36%
+    ),
+    linear-gradient(135deg, #e0f7ff 0%, #ffffff 45%, #ffeaf5 100%);
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  min-width: 320px;
+  margin: 0;
+  background: #ffffff;
+  color: #0f172a;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+button {
+  font-family: inherit;
+}
+
+::selection {
+  background: rgba(14, 165, 233, 0.22);
+}
