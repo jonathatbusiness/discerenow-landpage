@@ -9,6 +9,7 @@ export const translations = {
       addin: "Word Add-in",
       studio: "Studio",
       download: "Download",
+      install: "Install Guide",
       privacy: "Privacy",
     },
 
@@ -173,6 +174,54 @@ export const translations = {
         "Need detailed setup instructions or wish to explore all available versions? Visit our comprehensive releases page.",
       releasesCta: "View Releases & Instructions",
     },
+    install: {
+      eyebrow: "Installation guide",
+      title: "How to install the DiscereNow Template Builder for Word",
+      description:
+        "Install the DiscereNow Template Builder for Word. After installation, open Microsoft Word and follow the steps below to add the add-in to your workspace.",
+      stepLabel: "Step",
+      previous: "Previous installation step",
+      next: "Next installation step",
+      goToStep: "Go to installation step",
+      steps: [
+        {
+          title: 'Open "Add-ins"',
+          description: 'In the Home tab, click "Add-ins".',
+          image: "/images/install/step-1.png",
+          imageAlt:
+            "Microsoft Word Home tab with the Add-ins button highlighted.",
+        },
+        {
+          title: 'Select "+ More Add-ins"',
+          description: 'Open the add-ins menu and select "+ More Add-ins".',
+          image: "/images/install/step-2.png",
+          imageAlt:
+            "Microsoft Word add-ins menu with More Add-ins highlighted.",
+        },
+        {
+          title: 'Open "Shared folder"',
+          description: 'In the add-ins window, click "SHARED FOLDER".',
+          image: "/images/install/step-3.png",
+          imageAlt: "Office Add-ins window showing the Shared folder option.",
+        },
+        {
+          title: "Add DiscereNow",
+          description:
+            'Select "DiscereNow Template Builder for Word" and click "Add".',
+          image: "/images/install/step-4.png",
+          imageAlt:
+            "Shared folder list with DiscereNow Template Builder for Word selected.",
+        },
+        {
+          title: "Start using the add-in",
+          description:
+            'Click the "DiscereNow" button to open the panel and start using the tool.',
+          image: "/images/install/step-5.png",
+          imageAlt:
+            "Microsoft Word ribbon with the DiscereNow button available.",
+        },
+      ],
+    },
   },
 
   pt: {
@@ -181,6 +230,7 @@ export const translations = {
       addin: "Add-in do Word",
       studio: "Studio",
       download: "Download",
+      install: "Guia de instalação",
       privacy: "Privacidade",
     },
 
@@ -344,6 +394,57 @@ export const translations = {
       releasesText:
         "Precisa de instruções detalhadas de instalação ou quer explorar todas as versões disponíveis? Visite a página completa de releases.",
       releasesCta: "Ver releases e instruções",
+    },
+    install: {
+      eyebrow: "Guia de instalação",
+      title: "Como instalar o DiscereNow Template Builder for Word",
+      description:
+        "Instale o DiscereNow Template Builder for Word. Depois da instalação, abra o Microsoft Word e siga os passos abaixo para adicionar o suplemento ao seu ambiente de trabalho.",
+      stepLabel: "Passo",
+      previous: "Passo anterior da instalação",
+      next: "Próximo passo da instalação",
+      goToStep: "Ir para o passo de instalação",
+      steps: [
+        {
+          title: 'Abra "Suplementos"',
+          description: 'Na guia Página Inicial, clique em "Suplementos".',
+          image: "/images/install/step-1.png",
+          imageAlt:
+            "Guia Página Inicial do Microsoft Word com o botão Suplementos destacado.",
+        },
+        {
+          title: 'Selecione "Obter Suplementos"',
+          description:
+            'Clique em "Obter Suplementos" para abrir a loja de suplementos do Office.',
+          image: "/images/install/step-2.png",
+          imageAlt:
+            "Menu de suplementos do Word com a opção Obter Suplementos destacada.",
+        },
+        {
+          title: 'Acesse "Pastas Compartilhadas"',
+          description:
+            'Na janela de suplementos, clique na aba "Pastas Compartilhadas".',
+          image: "/images/install/step-3.png",
+          imageAlt:
+            "Janela de suplementos do Office exibindo a aba Pastas Compartilhadas.",
+        },
+        {
+          title: "Adicione o DiscereNow",
+          description:
+            'Selecione "DiscereNow Template Builder for Word" e clique em "Adicionar".',
+          image: "/images/install/step-4.png",
+          imageAlt:
+            "Lista de suplementos nas Pastas Compartilhadas com o DiscereNow selecionado.",
+        },
+        {
+          title: "Abra o DiscereNow",
+          description:
+            'Clique no botão "DiscereNow" na faixa de opções para abrir o painel e começar a usar.',
+          image: "/images/install/step-5.png",
+          imageAlt:
+            "Faixa de opções do Microsoft Word com o botão DiscereNow disponível.",
+        },
+      ],
     },
   },
 } as const;

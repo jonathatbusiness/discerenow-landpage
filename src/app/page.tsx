@@ -6,6 +6,7 @@ import AboutSection from "@/sections/AboutSection";
 import AddinSection from "@/sections/AddinSection";
 import StudioSection from "@/sections/StudioSection";
 import DownloadSection from "@/sections/DownloadSection";
+import InstallAddinSection from "@/sections/InstallAddinSection";
 
 export default function HomePage() {
   return (
@@ -18,6 +19,7 @@ export default function HomePage() {
         <AddinSection />
         <StudioSection />
         <DownloadSection />
+        <InstallAddinSection />
       </main>
 
       <Footer />
