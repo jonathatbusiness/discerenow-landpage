@@ -15,7 +15,7 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  metadataBase: new URL("https://discerenow-landpage-mu8r.vercel.app"),
+  metadataBase: new URL("https://discerenow.vercel.app"),
 
   title:
     "DiscereNow | Transform Word Documents into Dynamic E-learning Courses",
@@ -57,7 +57,7 @@ export const metadata: Metadata = {
     siteName: "DiscereNow",
     images: [
       {
-        url: "/og-discere-now.png",
+        url: "https://discerenow.vercel.app/og-discere-now.png",
         width: 1200,
         height: 630,
         alt: "DiscereNow preview image",
