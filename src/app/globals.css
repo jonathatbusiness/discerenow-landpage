@@ -71,6 +71,51 @@ button {
   background: rgba(14, 165, 233, 0.22);
 }
 
+.dn-blog-content {
+  color: #0f172a;
+  font-size: 18px;
+  line-height: 1.85;
+}
+
+.dn-blog-content p {
+  margin: 0 0 1.55rem;
+}
+
+.dn-blog-content h2 {
+  margin: 2.4rem 0 1rem;
+  font-size: 1.5rem;
+  line-height: 1.25;
+  font-weight: 900;
+  color: #0f172a;
+}
+
+.dn-blog-content h3 {
+  margin: 2rem 0 0.85rem;
+  font-size: 1.2rem;
+  line-height: 1.3;
+  font-weight: 900;
+  color: #0f172a;
+}
+
+.dn-blog-content ul,
+.dn-blog-content ol {
+  margin: 1.25rem 0 1.75rem;
+  padding-left: 1.5rem;
+}
+
+.dn-blog-content li {
+  margin: 0.65rem 0;
+}
+
+.dn-blog-content strong {
+  font-weight: 900;
+}
+
+.dn-blog-content a {
+  color: #8b5cf6;
+  font-weight: 800;
+}
+
 @media (prefers-reduced-motion: reduce) {
   html {
     scroll-behavior: auto;

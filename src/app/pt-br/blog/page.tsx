@@ -1,0 +1,77 @@
+import type { Metadata } from "next";
+import Link from "next/link";
+import Header from "@/components/Header";
+import Footer from "@/components/Footer";
+import BlogCard from "@/components/blog/BlogCard";
+import BlogFeaturedCarousel from "@/components/blog/BlogFeaturedCarousel";
+import { getBlogPosts } from "@/lib/blog";
+
+export const metadata: Metadata = {
+  title: "Blog DiscereNow | E-learning, SCORM e Design Instrucional",
+  description:
+    "Artigos sobre produção de e-learning, design instrucional, Word para SCORM e criação estruturada de cursos digitais.",
+  alternates: {
+    canonical: "/pt-br/blog",
+  },
+};
+
+export default function BlogPagePtBr() {
+  const posts = getBlogPosts("pt-br");
+  const featuredPosts = posts.slice(0, 5);
+
+  return (
+    <>
+      <Header />
+
+      <main className="bg-dn-surface-soft">
+        <BlogFeaturedCarousel
+          posts={featuredPosts}
+          blogHref="/pt-br/blog"
+          readLabel="Ler artigo"
+          allArticlesLabel="Todos os artigos"
+        />
+
+        <section className="mx-auto grid max-w-6xl gap-6 px-5 py-8 sm:px-6 lg:grid-cols-[minmax(0,1fr)_320px] lg:px-8">
+          <div className="space-y-5">
+            {posts.map((post) => (
+              <BlogCard
+                key={post.code}
+                post={post}
+                href={`/pt-br/blog/${post.slug}`}
+              />
+            ))}
+          </div>
+
+          <aside className="space-y-5">
+            <div className="rounded-[22px] border border-dn-border bg-white p-5 shadow-dn-soft">
+              <h2 className="text-lg font-black text-dn-text">Em breve</h2>
+              <p className="mt-3 leading-7 text-dn-muted">
+                Uma coleção curada de templates, checklists e ferramentas para
+                acelerar seu fluxo de produção em e-learning.
+              </p>
+            </div>
+
+            <div className="rounded-[22px] border border-dn-border bg-gradient-to-br from-white to-dn-surface-soft p-5 shadow-dn-soft">
+              <h2 className="text-lg font-black text-dn-text">
+                Conheça o DiscereNow
+              </h2>
+              <p className="mt-3 leading-7 text-dn-muted">
+                Transforme conteúdos estruturados em experiências digitais de
+                aprendizagem prontas para SCORM ou exportação web.
+              </p>
+              <Link
+                href="/#download"
+                className="mt-5 flex w-full items-center justify-center gap-2 rounded-full bg-gradient-to-r from-dn-blue via-dn-purple to-dn-pink px-6 py-3 text-base font-black text-white shadow-lg transition hover:scale-[1.02] hover:shadow-xl"
+              >
+                <span className="text-white">Baixe o DiscereNow</span>
+                <span className="text-lg leading-none text-white">→</span>
+              </Link>
+            </div>
+          </aside>
+        </section>
+      </main>
+
+      <Footer />
+    </>
+  );
+}

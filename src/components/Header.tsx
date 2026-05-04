@@ -66,6 +66,10 @@ export default function Header() {
             {t.nav.install}
           </a>
 
+          <Link className={navLinkClass} href="/blog">
+            Blog
+          </Link>
+
           <Link className={navLinkClass} href="/privacy">
             {t.nav.privacy}
           </Link>
@@ -152,6 +156,14 @@ export default function Header() {
               >
                 {t.nav.install}
               </a>
+
+              <Link
+                className={mobileLinkClass}
+                href="/blog"
+                onClick={closeMenu}
+              >
+                Blog
+              </Link>
 
               <Link
                 className={mobileLinkClass}

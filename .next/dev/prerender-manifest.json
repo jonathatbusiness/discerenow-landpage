@@ -1,11 +1,1 @@
-{
-  "version": 4,
-  "routes": {},
-  "dynamicRoutes": {},
-  "notFoundRoutes": [],
-  "preview": {
-    "previewModeId": "6ea2dfce6152453a9fbcd848fd4d8a2d",
-    "previewModeSigningKey": "9f3e5fd34e07b39f75cb46a5978afab33cffe3f0cf1405b63be4ebc2aed0de27",
-    "previewModeEncryptionKey": "80589d81e039e9f235bae9fb7d8cac605d41590ee7e2685da17e34f5cee30059"
-  }
-}
+{"version":4,"routes":{"/blog/why-structured-word-documents-matter-for-elearning":{},"/blog/top-online-course-creation-platforms-authoring-tools":{}},"dynamicRoutes":{"/blog/[slug]":{"dataRoute":null,"dataRouteRegex":null,"fallback":null,"fallbackRevalidate":false,"fallbackSourceRoute":"/blog/[slug]","routeRegex":"^\\/blog\\/([^/]+?)(?:\\/)?$","allowHeader":[]}},"notFoundRoutes":[],"preview":{"previewModeId":"54ef195fc0275f39cd8983a103f2dc1b","previewModeSigningKey":"3a7a159fe3fff00cc072f499685fdbc0101037b43591fee671874fe28c38160c","previewModeEncryptionKey":"a7f1b890055f00803606285c9e32321da2e400a4185162af323b2ab611d47f15"}}
