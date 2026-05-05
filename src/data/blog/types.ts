@@ -1,3 +1,5 @@
+import type { ReactNode } from "react";
+
 export type BlogLocale = "en" | "pt-br";
 
 export type BlogPost = {
@@ -13,5 +15,6 @@ export type BlogPost = {
   tags: string[];
   heroImage: string;
   heroImageAlt: string;
-  contentHtml: string;
+  content?: ReactNode;
+  contentHtml?: string;
 };

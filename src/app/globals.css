@@ -116,6 +116,14 @@ button {
   font-weight: 800;
 }
 
+.dn-blog-content figure img {
+  margin: 0;
+}
+
+.dn-blog-content button img {
+  margin: 0;
+}
+
 @media (prefers-reduced-motion: reduce) {
   html {
     scroll-behavior: auto;

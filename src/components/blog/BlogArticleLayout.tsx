@@ -77,10 +77,13 @@ export default function BlogArticleLayout({
 
         <div className="mt-10 grid gap-6 lg:grid-cols-[minmax(0,1fr)_360px]">
           <div className="rounded-none border border-dn-border bg-white px-6 py-8 shadow-dn-soft sm:px-10">
-            <div
-              className="dn-blog-content"
-              dangerouslySetInnerHTML={{ __html: post.contentHtml }}
-            />
+            <div className="dn-blog-content">
+              {post.content ? (
+                post.content
+              ) : post.contentHtml ? (
+                <div dangerouslySetInnerHTML={{ __html: post.contentHtml }} />
+              ) : null}
+            </div>
 
             <div className="mt-12 border-t border-dn-border pt-6">
               <p className="font-black italic text-dn-text">

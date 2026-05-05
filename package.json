@@ -3,10 +3,14 @@
   "version": "0.1.0",
   "private": true,
   "scripts": {
-    "dev": "concurrently \"next dev --webpack\" \"wait-on http://localhost:3000 && start chrome http://localhost:3000\"",
-    "build": "next build",
+    "generate:blog": "node scripts/generate-blog-index.mjs",
+    "predev": "node scripts/generate-blog-index.mjs",
+    "prebuild": "node scripts/generate-blog-index.mjs",
+    "dev": "npm run generate:article-components && next dev",
+    "build": "npm run generate:article-components && next build",
     "start": "next start",
-    "lint": "eslint"
+    "lint": "next lint",
+    "generate:article-components": "node scripts/generate-article-components-index.mjs"
   },
   "dependencies": {
     "framer-motion": "^12.38.0",

@@ -1,9 +1,5 @@
+import { allPosts } from "@/data/blog/generated-posts";
 import type { BlogLocale, BlogPost } from "@/data/blog/types";
-
-import { post as en2026050400 } from "@/data/blog/en/blog-article-2026050400";
-import { post as ptbr2026050400 } from "@/data/blog/pt-br/blog-article-2026050400";
-
-const allPosts: BlogPost[] = [en2026050400, ptbr2026050400];
 
 export function getBlogPosts(locale: BlogLocale): BlogPost[] {
   const now = new Date();
