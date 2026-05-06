@@ -1,3 +1,4 @@
+import { FeaturedLink } from "@/components/blog/article";
 import type { BlogPost } from "../types";
 
 export const post: BlogPost = {
@@ -329,20 +330,15 @@ export const post: BlogPost = {
         </li>
       </ul>
 
-      <p>
+      <FeaturedLink
+        href="https://discerenow.vercel.app/?utm_source=blog&utm_medium=article&utm_campaign=2026050400_en&utm_content=word_content_rebuild_cta#download"
+        external
+        label="Free Download DiscereNow"
+      >
         Ready to stop rebuilding your Word content from scratch in a separate
-        tool?{" "}
-        <strong>
-          <a
-            href="https://discerenow.vercel.app/#download"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Download DiscereNow and start building structured courses directly
-            from Word →
-          </a>
-        </strong>
-      </p>
+        tool? Download DiscereNow and start building structured courses directly
+        from Word →
+      </FeaturedLink>
 
       <h2 id="comparison">Quick Comparison: Which Tool Fits Which Context?</h2>
       <p>

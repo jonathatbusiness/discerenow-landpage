@@ -1,13 +1,13 @@
 import type { BlogPost } from "./types";
 
-import { post as enPost2026050400 } from "./en/blog-article-2026050400";
-import { post as enPost2026050500 } from "./en/blog-article-2026050500";
-import { post as ptBrPost2026050400 } from "./pt-br/blog-article-2026050400";
-import { post as ptBrPost2026050500 } from "./pt-br/blog-article-2026050500";
+import { post as en2026050500x } from "./en/blog-article-2026050500";
+import { post as en2026050400x } from "./en/blog-article-2026050400";
+import { post as ptbr2026050500x } from "./pt-br/blog-article-2026050500";
+import { post as ptbr2026050400x } from "./pt-br/blog-article-2026050400";
 
 export const allPosts: BlogPost[] = [
-  enPost2026050400,
-  enPost2026050500,
-  ptBrPost2026050400,
-  ptBrPost2026050500,
+  en2026050500x,
+  en2026050400x,
+  ptbr2026050500x,
+  ptbr2026050400x,
 ];
