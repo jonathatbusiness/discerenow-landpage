@@ -52,7 +52,6 @@ export const translations = {
       description:
         "DiscereNow combines a Microsoft Word add-in and a desktop Studio app to turn structured .docx training content into publishable SCORM or web courses.",
       primaryCta: "Download now",
-      secondaryCta: "View privacy policy",
       previewCards: [
         {
           label: "Word Add-in",
@@ -273,7 +272,6 @@ export const translations = {
       description:
         "O DiscereNow combina um add-in para Microsoft Word e um aplicativo Studio para transformar conteúdos .docx estruturados em cursos publicáveis em SCORM ou Web.",
       primaryCta: "Baixar agora",
-      secondaryCta: "Ver política de privacidade",
       previewCards: [
         {
           label: "Add-in do Word",

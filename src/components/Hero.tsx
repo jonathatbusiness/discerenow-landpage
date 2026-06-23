@@ -1,7 +1,6 @@
 "use client";
 
-import Link from "next/link";
-import { ArrowRight, Download, FileText, Layers } from "lucide-react";
+import { Download, Layers } from "lucide-react";
 import { motion, useReducedMotion } from "framer-motion";
 
 import { useI18n } from "@/providers/I18nProvider";
@@ -49,16 +48,6 @@ export default function Hero() {
               <Download className="h-4 w-4" />
               {t.hero.primaryCta}
             </a>
-
-            <Link
-              href="/privacy"
-              className="inline-flex min-w-fit shrink-0 items-center justify-center gap-2 whitespace-nowrap rounded-full border border-white/20 bg-white/10 px-7 py-4 text-sm font-bold text-white backdrop-blur transition duration-300 hover:-translate-y-1 hover:border-dn-cyan/50 hover:bg-white/15 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-dn-cyan"
-              aria-label={t.hero.secondaryCta}
-            >
-              <FileText className="h-4 w-4" />
-              {t.hero.secondaryCta}
-              <ArrowRight className="h-4 w-4" />
-            </Link>
           </div>
         </motion.div>
 

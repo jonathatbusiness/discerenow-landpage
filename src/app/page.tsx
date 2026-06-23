@@ -13,7 +13,7 @@ export default function HomePage() {
     <>
       <Header />
 
-      <main>
+      <main className="bg-[radial-gradient(circle_at_0%_14%,rgba(14,165,233,0.22),transparent_34%),radial-gradient(circle_at_100%_14%,rgba(236,72,153,0.2),transparent_36%),radial-gradient(circle_at_0%_72%,rgba(14,165,233,0.14),transparent_32%),radial-gradient(circle_at_100%_78%,rgba(236,72,153,0.14),transparent_34%),linear-gradient(180deg,#e0f7ff_0%,#ffffff_42%,#fff3fa_100%)]">
         <Hero />
         <AboutSection />
         <AddinSection />

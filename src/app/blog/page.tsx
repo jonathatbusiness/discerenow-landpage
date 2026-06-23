@@ -64,7 +64,7 @@ export default function BlogPage() {
               </p>
               <Link
                 href="/#download"
-                className="mt-5 flex w-full items-center justify-center gap-2 rounded-full bg-gradient-to-r from-dn-blue via-dn-purple to-dn-pink px-6 py-3 text-base font-black text-white shadow-lg ring-1 ring-white/20 transition hover:scale-[1.02] hover:shadow-xl"
+                className="mt-5 flex w-full items-center justify-center gap-2 rounded-full bg-dn-pink px-6 py-3 text-base font-black text-white shadow-[0_18px_45px_rgba(236,72,153,0.28)] ring-1 ring-white/20 transition hover:scale-[1.02] hover:bg-pink-500 hover:shadow-[0_22px_55px_rgba(236,72,153,0.34)]"
               >
                 <span className="text-white">Download DiscereNow</span>
                 <span className="text-lg leading-none text-white">→</span>

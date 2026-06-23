@@ -70,7 +70,7 @@ export default function BlogLocalePrompt() {
           <Link
             href="/pt-br/blog"
             onClick={goToPortuguese}
-            className="flex flex-1 items-center justify-center rounded-full bg-gradient-to-r from-dn-blue via-dn-purple to-dn-pink px-5 py-3 text-sm font-black shadow-lg"
+            className="flex flex-1 items-center justify-center rounded-full bg-dn-pink px-5 py-3 text-sm font-black shadow-[0_18px_45px_rgba(236,72,153,0.28)] transition hover:bg-pink-500"
           >
             <span className="text-white">Ir para PT-BR</span>
           </Link>

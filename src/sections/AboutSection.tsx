@@ -13,7 +13,7 @@ export default function AboutSection() {
   return (
     <section
       id="about"
-      className="relative overflow-hidden bg-[radial-gradient(circle_at_0%_0%,rgba(14,165,233,0.24),transparent_34%),radial-gradient(circle_at_100%_0%,rgba(236,72,153,0.22),transparent_36%),linear-gradient(135deg,#e0f7ff_0%,#ffffff_45%,#ffeaf5_100%)] py-24 text-dn-text sm:py-28"
+      className="relative overflow-hidden bg-transparent py-24 text-dn-text sm:py-28"
     >
       <div className="mx-auto max-w-7xl px-5 sm:px-6 lg:px-8">
         <Reveal className="max-w-3xl">
@@ -37,7 +37,7 @@ export default function AboutSection() {
             return (
               <Reveal key={card.title} delay={index * 0.08}>
                 <article className="h-full rounded-[1.5rem] border border-dn-border bg-white p-6 shadow-dn-soft transition duration-300 hover:-translate-y-1.5 hover:border-dn-blue/30 hover:shadow-dn sm:rounded-[1.75rem] sm:p-8">
-                  <div className="mb-6 flex h-12 w-12 items-center justify-center rounded-2xl bg-gradient-to-br from-dn-blue via-dn-purple to-dn-pink text-white shadow-dn-soft">
+                  <div className="mb-6 flex h-12 w-12 items-center justify-center rounded-2xl bg-dn-pink text-white shadow-[0_18px_45px_rgba(236,72,153,0.22)]">
                     <Icon className="h-5 w-5" />
                   </div>
 

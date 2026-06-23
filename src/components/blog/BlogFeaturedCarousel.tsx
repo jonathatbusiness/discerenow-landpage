@@ -126,14 +126,14 @@ export default function BlogFeaturedCarousel({
                 <div className="mt-6 flex flex-wrap gap-3">
                   <Link
                     href={articleHref}
-                    className="rounded-full bg-[var(--dn-gradient)] px-5 py-3 text-sm font-black text-white shadow-dn-soft"
+                    className="inline-flex items-center justify-center rounded-full bg-dn-pink px-7 py-4 text-sm font-black text-white shadow-[0_18px_45px_rgba(236,72,153,0.28)] transition duration-300 hover:-translate-y-1 hover:bg-pink-500 hover:shadow-[0_22px_55px_rgba(236,72,153,0.34)] focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-dn-cyan"
                   >
                     {readLabel}
                   </Link>
 
                   <Link
                     href={blogHref}
-                    className="rounded-full border border-white/30 bg-white/10 px-5 py-3 text-sm font-black text-white backdrop-blur"
+                    className="inline-flex items-center justify-center rounded-full border border-white/30 bg-white/10 px-5 py-3 text-sm font-black text-white backdrop-blur transition duration-300 hover:-translate-y-0.5 hover:bg-white/15 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-dn-cyan"
                   >
                     {allArticlesLabel}
                   </Link>

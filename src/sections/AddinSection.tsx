@@ -18,7 +18,7 @@ export default function AddinSection() {
   return (
     <section
       id="addin"
-      className="bg-[radial-gradient(circle_at_0%_0%,rgba(14,165,233,0.18),transparent_38%),radial-gradient(circle_at_100%_0%,rgba(236,72,153,0.18),transparent_40%),linear-gradient(180deg,#ffffff_0%,#f8fafc_100%)] py-24 text-dn-text sm:py-28"
+      className="bg-transparent py-24 text-dn-text sm:py-28"
     >
       <div className="mx-auto max-w-6xl px-5 sm:px-6">
         <div className="grid gap-12 lg:grid-cols-[0.9fr_1.1fr] lg:items-center">

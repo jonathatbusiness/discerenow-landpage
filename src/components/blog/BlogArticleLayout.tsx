@@ -147,9 +147,9 @@ export default function BlogArticleLayout({
               <p className="mt-3 leading-7 text-dn-muted">{ctaText}</p>
               <Link
                 href={ctaHref}
-                className="mt-5 inline-flex rounded-full bg-[var(--dn-gradient)] px-5 py-3 text-sm font-black text-white shadow-dn-soft"
+                className="mt-5 inline-flex items-center justify-center rounded-full bg-dn-pink px-7 py-4 text-sm font-black text-white shadow-[0_18px_45px_rgba(236,72,153,0.28)] transition duration-300 hover:-translate-y-1 hover:bg-pink-500 hover:shadow-[0_22px_55px_rgba(236,72,153,0.34)] focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-dn-cyan"
               >
-                {ctaButton}
+                <span className="text-white">{ctaButton}</span>
               </Link>
             </div>
           </aside>

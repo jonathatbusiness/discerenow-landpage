@@ -11,7 +11,7 @@ export default function DownloadSection() {
   return (
     <section
       id="download"
-      className="relative overflow-hidden bg-[radial-gradient(circle_at_0%_0%,rgba(14,165,233,0.24),transparent_34%),radial-gradient(circle_at_100%_0%,rgba(236,72,153,0.22),transparent_36%),linear-gradient(135deg,#e0f7ff_0%,#ffffff_45%,#ffeaf5_100%)] py-24 text-dn-text sm:py-28"
+      className="relative overflow-hidden bg-transparent py-24 text-dn-text sm:py-28"
     >
       <div className="mx-auto max-w-7xl px-5 sm:px-6 lg:px-8">
         <Reveal className="max-w-4xl">
@@ -43,7 +43,7 @@ export default function DownloadSection() {
                 href="https://github.com/jonathatbusiness/discerenow-addin/releases/download/v1.0.0/DiscereNow_Addin_Installer.exe"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="mt-8 inline-flex w-full items-center justify-center gap-2 rounded-full bg-gradient-to-r from-dn-blue via-dn-purple to-dn-pink px-7 py-4 text-sm font-black text-white shadow-dn transition duration-300 hover:-translate-y-1 hover:shadow-[0_22px_55px_rgba(139,92,246,0.28)] focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-dn-cyan sm:w-auto"
+                className="mt-8 inline-flex w-full items-center justify-center gap-2 rounded-full bg-dn-pink px-7 py-4 text-sm font-black text-white shadow-[0_18px_45px_rgba(236,72,153,0.28)] transition duration-300 hover:-translate-y-1 hover:bg-pink-500 hover:shadow-[0_22px_55px_rgba(236,72,153,0.34)] focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-dn-cyan sm:w-auto"
                 aria-label={t.download.addinCard.cta}
               >
                 <span className="text-white">{t.download.addinCard.cta}</span>
@@ -66,7 +66,7 @@ export default function DownloadSection() {
                 href="https://github.com/jonathatbusiness/discerenow-studio-installer/releases/download/v1.1.0/DiscereNow.Studio.v1.1.0.zip"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="mt-8 inline-flex w-full items-center justify-center gap-2 rounded-full bg-gradient-to-r from-dn-blue via-dn-purple to-dn-pink px-7 py-4 text-sm font-black text-white shadow-dn transition duration-300 hover:-translate-y-1 hover:shadow-[0_22px_55px_rgba(139,92,246,0.28)] focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-dn-cyan sm:w-auto"
+                className="mt-8 inline-flex w-full items-center justify-center gap-2 rounded-full bg-dn-pink px-7 py-4 text-sm font-black text-white shadow-[0_18px_45px_rgba(236,72,153,0.28)] transition duration-300 hover:-translate-y-1 hover:bg-pink-500 hover:shadow-[0_22px_55px_rgba(236,72,153,0.34)] focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-dn-cyan sm:w-auto"
                 aria-label={t.download.studioCard.cta}
               >
                 {t.download.studioCard.cta}
