@@ -1,5 +1,5 @@
 import type { Metadata } from "next";
-import { notFound, permanentRedirect } from "next/navigation";
+import { notFound } from "next/navigation";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 import BlogArticleLayout from "@/components/blog/BlogArticleLayout";
@@ -71,9 +71,6 @@ export default async function BlogArticlePagePtBr({
   params,
 }: BlogArticlePageProps) {
   const { slug } = await params;
-
-  permanentRedirect(`/pt-br/blog/${slug}`);
-
   const post = getBlogPostBySlug("pt-br", slug);
 
   if (!post) {
@@ -85,7 +82,7 @@ export default async function BlogArticlePagePtBr({
       <Header />
 
       <BlogArticleLayout
-        post={post!}
+        post={post}
         relatedPosts={getRelatedBlogPosts("pt-br", slug)}
         blogHref="/pt-br/blog"
         blogLabel="Blog"

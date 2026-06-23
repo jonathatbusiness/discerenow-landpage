@@ -17,11 +17,10 @@ const geistMono = Geist_Mono({
 export const metadata: Metadata = {
   metadataBase: new URL("https://discerenow.vercel.app"),
 
-  title:
-    "DiscereNow | Transform Word Documents into Dynamic E-learning Courses",
+  title: "DiscereNow | Word to SCORM E-Learning Course Converter",
 
   description:
-    "Empower your knowledge. DiscereNow simplifies e-learning creation, turning structured Microsoft Word documents into interactive, SCORM-ready digital courses with ease and efficiency.",
+    "Convert structured Microsoft Word documents into SCORM-ready e-learning courses with the DiscereNow Word add-in and Studio desktop app.",
 
   keywords: [
     "DiscereNow",
@@ -32,8 +31,13 @@ export const metadata: Metadata = {
     "course creation",
     "LXD",
     "SCORM",
+    "SCORM converter",
+    "Word to SCORM converter",
     "Word to e-learning",
     "Word to SCORM",
+    "DOCX to SCORM",
+    "convert Word to SCORM",
+    "convert Word documents to e-learning",
     "digital learning",
     "content creation",
     "training solutions",
@@ -49,10 +53,9 @@ export const metadata: Metadata = {
 
   openGraph: {
     type: "website",
-    title:
-      "DiscereNow | Transform Word Documents into Dynamic E-learning Courses",
+    title: "DiscereNow | Word to SCORM E-Learning Course Converter",
     description:
-      "DiscereNow empowers experts and educators to transform structured Microsoft Word content into engaging, SCORM-ready e-learning courses.",
+      "Convert structured Microsoft Word documents into SCORM-ready e-learning courses with a Word add-in and Studio desktop app.",
     url: "https://discerenow.vercel.app/",
     siteName: "DiscereNow",
     images: [
@@ -67,10 +70,9 @@ export const metadata: Metadata = {
 
   twitter: {
     card: "summary_large_image",
-    title:
-      "DiscereNow | Transform Word Documents into Dynamic E-learning Courses",
+    title: "DiscereNow | Word to SCORM E-Learning Course Converter",
     description:
-      "Simplify e-learning. DiscereNow converts structured Word documents into interactive, SCORM-ready digital courses.",
+      "Convert structured Word documents into SCORM-ready e-learning courses with the DiscereNow Word add-in and Studio desktop app.",
     images: ["/og-discere-now.png"],
   },
 

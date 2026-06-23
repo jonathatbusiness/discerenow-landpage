@@ -48,9 +48,9 @@ export const translations = {
     hero: {
       badge: "Word-to-SCORM learning content pipeline",
       title:
-        "Build structured learning content in Word. Export it as SCORM-ready digital courses.",
+        "Convert Word documents into SCORM-ready e-learning courses.",
       description:
-        "DiscereNow connects Microsoft Word, instructional design workflows, and course export into a practical authoring pipeline for e-learning teams.",
+        "DiscereNow combines a Microsoft Word add-in and a desktop Studio app to turn structured .docx training content into publishable SCORM or web courses.",
       primaryCta: "Download now",
       secondaryCta: "View privacy policy",
       previewCards: [
@@ -269,9 +269,9 @@ export const translations = {
     hero: {
       badge: "Pipeline de conteúdo educacional de Word para SCORM",
       title:
-        "Crie conteúdos estruturados no Word. Exporte como cursos digitais prontos para SCORM.",
+        "Converta documentos Word em cursos e-learning prontos para SCORM.",
       description:
-        "O DiscereNow conecta Microsoft Word, fluxos de design instrucional e exportação de cursos em um pipeline prático de autoria para equipes de e-learning.",
+        "O DiscereNow combina um add-in para Microsoft Word e um aplicativo Studio para transformar conteúdos .docx estruturados em cursos publicáveis em SCORM ou Web.",
       primaryCta: "Baixar agora",
       secondaryCta: "Ver política de privacidade",
       previewCards: [

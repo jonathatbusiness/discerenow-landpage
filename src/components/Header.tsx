@@ -46,23 +46,23 @@ export default function Header() {
           className="hidden items-center gap-7 text-sm font-medium text-white/75 md:flex"
           aria-label="Primary navigation"
         >
-          <a className={navLinkClass} href="#about">
+          <a className={navLinkClass} href="/#about">
             {t.nav.about}
           </a>
 
-          <a className={navLinkClass} href="#addin">
+          <a className={navLinkClass} href="/#addin">
             {t.nav.addin}
           </a>
 
-          <a className={navLinkClass} href="#studio">
+          <a className={navLinkClass} href="/#studio">
             {t.nav.studio}
           </a>
 
-          <a className={navLinkClass} href="#download">
+          <a className={navLinkClass} href="/#download">
             {t.nav.download}
           </a>
 
-          <a className={navLinkClass} href="#install">
+          <a className={navLinkClass} href="/#install">
             {t.nav.install}
           </a>
 
@@ -129,21 +129,21 @@ export default function Header() {
               className="flex flex-col gap-1 px-5 py-5 text-sm font-medium text-white/80 sm:px-6"
               aria-label="Mobile navigation"
             >
-              <a className={mobileLinkClass} href="#about" onClick={closeMenu}>
+              <a className={mobileLinkClass} href="/#about" onClick={closeMenu}>
                 {t.nav.about}
               </a>
 
-              <a className={mobileLinkClass} href="#addin" onClick={closeMenu}>
+              <a className={mobileLinkClass} href="/#addin" onClick={closeMenu}>
                 {t.nav.addin}
               </a>
 
-              <a className={mobileLinkClass} href="#studio" onClick={closeMenu}>
+              <a className={mobileLinkClass} href="/#studio" onClick={closeMenu}>
                 {t.nav.studio}
               </a>
 
               <a
                 className={mobileLinkClass}
-                href="#download"
+                href="/#download"
                 onClick={closeMenu}
               >
                 {t.nav.download}
@@ -151,7 +151,7 @@ export default function Header() {
 
               <a
                 className={mobileLinkClass}
-                href="#install"
+                href="/#install"
                 onClick={closeMenu}
               >
                 {t.nav.install}
