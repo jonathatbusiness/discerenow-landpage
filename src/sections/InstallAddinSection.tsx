@@ -93,7 +93,7 @@ export default function InstallAddinSection() {
                     key={step.title}
                     type="button"
                     onClick={() => setActiveStep(index)}
-                    className={`group flex w-full items-start gap-4 rounded-2xl border p-4 text-left transition duration-300 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-dn-cyan ${
+                    className={`group flex w-full cursor-pointer items-start gap-4 rounded-2xl border p-4 text-left transition duration-300 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-dn-cyan ${
                       isActive
                         ? "border-dn-cyan/60 bg-white/10 shadow-[0_18px_50px_rgba(14,165,233,0.18)]"
                         : "border-white/10 bg-white/[0.04] hover:-translate-y-1 hover:border-white/20 hover:bg-white/[0.07]"
@@ -141,7 +141,7 @@ export default function InstallAddinSection() {
                   <button
                     type="button"
                     onClick={goToPrevious}
-                    className="inline-flex h-11 w-11 items-center justify-center rounded-full border border-white/20 bg-dn-bg/70 text-white backdrop-blur transition duration-300 hover:-translate-y-0.5 hover:bg-dn-bg focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-dn-cyan"
+                    className="inline-flex h-11 w-11 cursor-pointer items-center justify-center rounded-full border border-white/20 bg-dn-bg/70 text-white backdrop-blur transition duration-300 hover:-translate-y-0.5 hover:bg-dn-bg focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-dn-cyan"
                     aria-label={t.install.previous}
                   >
                     <ChevronLeft className="h-5 w-5" />
@@ -153,7 +153,7 @@ export default function InstallAddinSection() {
                         key={step.title}
                         type="button"
                         onClick={() => setActiveStep(index)}
-                        className={`h-2.5 rounded-full transition-all duration-300 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-dn-cyan ${
+                        className={`h-2.5 cursor-pointer rounded-full transition-all duration-300 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-dn-cyan ${
                           activeStep === index
                             ? "w-8 bg-white"
                             : "w-2.5 bg-white/45 hover:bg-white/80"
@@ -166,7 +166,7 @@ export default function InstallAddinSection() {
                   <button
                     type="button"
                     onClick={goToNext}
-                    className="inline-flex h-11 w-11 items-center justify-center rounded-full border border-white/20 bg-dn-bg/70 text-white backdrop-blur transition duration-300 hover:-translate-y-0.5 hover:bg-dn-bg focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-dn-cyan"
+                    className="inline-flex h-11 w-11 cursor-pointer items-center justify-center rounded-full border border-white/20 bg-dn-bg/70 text-white backdrop-blur transition duration-300 hover:-translate-y-0.5 hover:bg-dn-bg focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-dn-cyan"
                     aria-label={t.install.next}
                   >
                     <ChevronRight className="h-5 w-5" />
