@@ -47,11 +47,9 @@ export default function BlogArticleLayout({
             <Link href={blogHref} className="text-dn-purple">
               {blogLabel}
             </Link>
-            <span className="mx-2 text-dn-border">/</span>
-            <span>{post.title}</span>
           </div>
 
-          <h1 className="mt-4 max-w-5xl text-4xl font-black leading-tight tracking-tight text-dn-text sm:text-5xl">
+          <h1 className="mt-4 max-w-5xl text-3xl font-black leading-tight tracking-tight text-dn-text sm:text-5xl">
             {post.title}
           </h1>
 
@@ -63,11 +61,11 @@ export default function BlogArticleLayout({
             <span>6 min read</span>
           </div>
 
-          <div className="mt-5 flex flex-wrap gap-2">
+          <div className="-mx-5 mt-5 flex gap-2 overflow-x-auto px-5 pb-2 sm:mx-0 sm:flex-wrap sm:overflow-visible sm:px-0 sm:pb-0">
             {post.tags.map((tag) => (
               <span
                 key={tag}
-                className="rounded-full border border-dn-border bg-white px-3 py-1 text-sm font-black text-dn-purple"
+                className="shrink-0 rounded-full border border-dn-border bg-white px-3 py-1 text-sm font-black text-dn-purple"
               >
                 {tag}
               </span>
