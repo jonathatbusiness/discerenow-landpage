@@ -17,19 +17,19 @@ export const translations = {
       title: "Privacy Policy",
       updatedLabel: "Last updated",
       intro:
-        "DiscereNow does not collect, store, or share personal data from users. All processing performed by the DiscereNow Template Builder and DiscereNow Studio happens locally on your machine.",
+        "DiscereNow separates the privacy behavior of its local tools from this website. The DiscereNow Template Builder for Word and DiscereNow Studio process files locally on your machine and do not collect, store, upload, or share your documents or personal data. This website uses analytics only to understand general site usage.",
       sections: [
         {
-          title: "1. Data Collection",
-          body: "We do not collect personal data, usage data, or analytics information. The tools operate entirely within your local environment.",
+          title: "1. Local Tool Data Processing",
+          body: "The DiscereNow Word add-in and DiscereNow Studio operate within your local environment. Documents created, structured, imported, or converted with these tools remain on your device and are not uploaded to DiscereNow servers.",
         },
         {
-          title: "2. File Processing",
-          body: "Documents created and processed using DiscereNow remain on your device. No files are uploaded to external servers.",
+          title: "2. Website Analytics",
+          body: "This website uses Google Analytics to understand general site usage, such as page views, traffic sources, and engagement. Analytics data is aggregated and does not directly identify individual visitors.",
         },
         {
           title: "3. Third-Party Services",
-          body: "DiscereNow does not integrate with third-party tracking or analytics tools. Any external links provided, such as GitHub downloads, are subject to the policies of those platforms.",
+          body: "The DiscereNow local tools do not integrate with third-party tracking or analytics tools. This website uses Google Analytics, and external links such as GitHub downloads are subject to the policies of those platforms.",
         },
         {
           title: "4. Security",
@@ -238,19 +238,19 @@ export const translations = {
       title: "Política de Privacidade",
       updatedLabel: "Última atualização",
       intro:
-        "O DiscereNow não coleta, armazena ou compartilha dados pessoais dos usuários. Todo o processamento realizado pelo DiscereNow Template Builder e pelo DiscereNow Studio acontece localmente no seu computador.",
+        "O DiscereNow diferencia o comportamento de privacidade das ferramentas locais deste website. O DiscereNow Template Builder para Word e o DiscereNow Studio processam arquivos localmente no seu computador e não coletam, armazenam, enviam ou compartilham seus documentos ou dados pessoais. Este website usa analytics apenas para entender o uso geral do site.",
       sections: [
         {
-          title: "1. Coleta de Dados",
-          body: "Nós não coletamos dados pessoais, dados de uso ou informações de analytics. As ferramentas funcionam inteiramente no seu ambiente local.",
+          title: "1. Processamento de Dados nas Ferramentas Locais",
+          body: "O add-in do Word do DiscereNow e o DiscereNow Studio funcionam no seu ambiente local. Documentos criados, estruturados, importados ou convertidos com essas ferramentas permanecem no seu dispositivo e não são enviados para servidores do DiscereNow.",
         },
         {
-          title: "2. Processamento de Arquivos",
-          body: "Documentos criados e processados com o DiscereNow permanecem no seu dispositivo. Nenhum arquivo é enviado para servidores externos.",
+          title: "2. Analytics do Website",
+          body: "Este website usa Google Analytics para entender o uso geral do site, como visualizações de páginas, origem do tráfego e engajamento. Os dados de analytics são agregados e não identificam diretamente visitantes individuais.",
         },
         {
           title: "3. Serviços de Terceiros",
-          body: "O DiscereNow não integra ferramentas de rastreamento ou analytics de terceiros. Links externos fornecidos, como downloads no GitHub, estão sujeitos às políticas dessas plataformas.",
+          body: "As ferramentas locais do DiscereNow não integram ferramentas de rastreamento ou analytics de terceiros. Este website usa Google Analytics, e links externos, como downloads no GitHub, estão sujeitos às políticas dessas plataformas.",
         },
         {
           title: "4. Segurança",

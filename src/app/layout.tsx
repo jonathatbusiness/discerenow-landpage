@@ -53,7 +53,7 @@ export const metadata: Metadata = {
       "DiscereNow | Transform Word Documents into Dynamic E-learning Courses",
     description:
       "DiscereNow empowers experts and educators to transform structured Microsoft Word content into engaging, SCORM-ready e-learning courses.",
-    url: "https://discerenow-landpage-mu8r.vercel.app/",
+    url: "https://discerenow.vercel.app/",
     siteName: "DiscereNow",
     images: [
       {
